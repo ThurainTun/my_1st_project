@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="/style/about.css">
+</head>
+<body>
+    <section class="section section-light">
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About</a></li>
+           <li style="float: right;" class="GG"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;color: white;">Login</a></li>
+        </ul>
+      </section><br>
+        <h2>About this site!</h2>        
+        <div>
+            <h4 >
+                This Website is completely designed by Thurain. He wrote this Website by using HTML, CSS & JavaSctipt.
+            He also like skateboarding so he decided to make this website with some content. You can also buy the 
+            sakteboard with cheapet price from his website ! <br><br> <center style="font-size: 20px;">PLease Enjoy !</center>
+            </h4>
+        </div>
+        </body>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="photo/ava.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname" style="color: white;"><b>Username</b></label>
+                <input style="color: black;" type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw" style="color: white;"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label style="color: white;">
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:rgb(54, 57, 69)">
+                <button style="color: white;" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span style="color: white;" class="psw">Forgot <a style="color: white;" href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+</html>
+<footer>
+    <p>
+      <b>Designed by Thurain</b>
+    </p>
+  </footer>

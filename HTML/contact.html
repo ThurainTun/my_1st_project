@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+    <link rel="stylesheet" href="/style/contect.css">
+</head>
+<body>
+    <section class="section section-light">
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About</a></li>
+           <li style="float: right;" class="GG"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;color: white;">Login</a></li>
+        </ul> <br>
+      </section>
+      <h2 style="color: white;text-align: center;">Just Contact me !</h2> <br>
+      <h3 class="para">If you have any problems with my website or if you want to know How to buy my product from my webiste, just contect me! </h3>
+      <h3 class="para">I describe some of my social media accounts given below, click and contect me!</h3>
+      <center>
+        <div class="row">
+          <div class="column">
+            <a href="https://www.facebook.com/ThurainHyper"><img src="/images/fb1.png" alt="" style="width:10%"></a>
+           </form>
+          </div>
+          <div class="column">
+            <a href="https://www.instagram.com/thurain235/"><img src="/images/ig1.png" alt="" style="width:20%"></a>
+          </div>
+          <div class="column">
+            <a href="https://twitter.com/NayThur34207280?s=07"><img src="/images/twt.png" alt="" style="width:10%"></a>       
+          </div>               
+      </div>
+    </center><br>
+    <h3 class="para">You can aslo call me : 09 111 222 333 </h3>
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="photo/ava.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname" style="color: white;"><b>Username</b></label>
+          <input style="color: black;" type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw" style="color: white;"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label style="color: white;">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:rgb(54, 57, 69)">
+          <button style="color: white;" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span style="color: white;" class="psw">Forgot <a style="color: white;" href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    </body> 
+    <footer>
+        <p>
+          <b>Designed by Thurain</b>
+        </p>
+      </footer>
+</html>

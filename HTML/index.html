@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="/style/style.css" >
+</head>
+<body>
+    <div class="pimg1">
+        <div class="ptext">
+          <span class="border">
+            Welcome Form My Website
+          </span>
+        </div>
+      </div>
+    
+      <section class="section section-light">
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About</a></li>
+           <li style="float: right;" class="GG"><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;color: white;">Login</a></li>
+        </ul>
+      </section>
+      <div class="paragraph">
+        <h1>
+          Skateboarding
+        </h1>
+      </div>
+      <h2 class="heading">Definition</h2>
+      <div class="para">
+        <p>Skateboarding is a sporting activity in which an individual rides on a short, narrow board, usually made of some composite material, to which are attached a pair of small wheels at each end of the board. The rider propels himself or herself by placing one foot on the board and pushing on the ground with the other foot. The rider typically stands in an upright or crouching position on the board, from which position any number of tricks can be performed.</p>
+      </div>
+      <h2 class="heading">Purpose</h2>
+      <div class="para">
+        <p>People ride skateboards for a variety of reasons, including pure recreation, as a means of transportation, as a type of artistic display, or as a career as a professional skateboarder.</p>
+      </div>
+      <h2 class="heading">Demographics</h2>
+      <div class="para">
+        <p> <a href="https://www.statista.com/" style="text-decoration: none; color: aqua;">Statista.com</a> showed that participation in skateboarding has declined significantly in recent years, falling from a total of 10.13 million more-than-once participants in 2006, to a low of 5.83 million participants in 2011, and somewhat rebounding to 6.44 million more-than-once participants in 2015; a decline of 3.68 million from its high to its low over the time period from 2006 to 2015. The largest one-year decline, from 2010 to 2011, occurred primarily among so-called “frequent” riders, those who participated in the sport more than 52 times a year.
+          <p>
+          From 2006 and 2014, the number of skateboarders from the age of 6 to 17 years decreased from 8.75 million to less than 4 million. However, during this same period, the number of participants aged between 18 and 24 years increased slightly. Surveys tend to show that the vast majority of skateboarders are male. Data suggest that the sport is becoming somewhat less popular among the mid-adolescent range (early teens), although it has begun to grow in popularity among the youngest age group, those between the ages of five and nine.</p>
+      </div>
+      <h2 class="heading">History</h2>
+      <div class="para">
+        <p>Most skateboarders date the beginnings of their sport to the end of the 1940s and early 1950s when a number of surfers began exploring ways of pursuing their sport in settings other than the ocean. They conceived the idea of putting wheels on strips of wood similar to surfboards and “surfing” city streets on these boards. The activity was given the name of “sidewalk surfing.” For a decade, enthusiasm for the sport surged, and sales of wheeled surfboards surpassed the US$10 million mark by 1965. A year earlier, a specialty publication, Skateboarder Magazine, began publication, and also in 1965, the first international skateboarding championship was in Anaheim, California. The contestants were primarily 12- to 14-year-old boys, and the winner was 15-year-old Danny Bearer, later to become a skateboarding icon. By the early 1970s, skateboarding had begun to lose its appeal; sales of boards declined and Skateboarder Magazine went out of business.</p>
+      </div>
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="photo/ava.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname" style="color: white;"><b>Username</b></label>
+            <input style="color: black;" type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw" style="color: white;"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label style="color: white;">
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:rgb(54, 57, 69)">
+            <button style="color: white;" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span style="color: white;" class="psw">Forgot <a style="color: white;" href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+</body>
+<footer>
+  <p>
+    <b>Designed by Thurain</b>
+  </p>
+</footer>
+</html>
